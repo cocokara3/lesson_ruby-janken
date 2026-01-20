@@ -2,12 +2,11 @@ def game_start
   janken_kekka = janken
   if janken_kekka == :draw
     puts "あいこです。もう一度じゃんけんをします。"
-    game_start # あいこのため再帰呼び出し
+    game_start 
   elsif janken_kekka == :exit
     puts "じゃんけんを終了しました。"
-    return # ゲーム終了
+    return 
   else
-    # あっち向いてホイに進む
     atchimuitehoi(janken_kekka == :win)
   end
 end
