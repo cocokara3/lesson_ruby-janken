@@ -48,7 +48,7 @@ end
 
 def atchimuitehoi(player_won_janken)
   directions = ["上", "下", "左", "右"]
-  puts "あっち向いてホイ…"
+  puts "あっち向いてホイ！"
   puts "0: 上 1: 下 2: 左 3: 右"
 
   player_direction_str = gets.chomp
